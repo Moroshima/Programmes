@@ -1,22 +1,21 @@
-
 #include <stdio.h>
 int main()
 {
-    //瀹氫箟涓変綅鏁皀um,涓綅鏁皊d,鍗佷綅鏁皌d,鐧句綅鏁癶d
+    //定义三位数num,个位数sd,十位数td,百位数hd
     int num, sd, td, hd;
-    //寰幆鎵�鏈変笁浣嶆暟
+    //循环所有三位数
     for(num=100;num<1000;num++)
     {
-        //鑾峰彇涓変綅鏁板瓧num鐧句綅涓婄殑鏁板瓧
+        //获取三位数字num百位上的数字
         hd = num/100;
-        //鑾峰彇涓変綅鏁板瓧num鍗佷綅涓婄殑鏁板瓧
+        //获取三位数字num十位上的数字
         td = (num/10)%10;
-        //鑾峰彇涓変綅鏁板瓧num涓綅涓婄殑鏁板瓧
+        //获取三位数字num个位上的数字
         sd = num%10;
-        //姘翠粰鑺辨暟鐨勬潯浠舵槸浠�涔堬紵
+        //水仙花数的条件是什么？
         if(hd*hd*hd+td*td*td+sd*sd*sd==num) 
         {
-            printf("姘翠粰鑺辨暟瀛楋細%d\n", num);    
+            printf("水仙花数字：%d\n", num);    
         }
     }
     return 0;    
