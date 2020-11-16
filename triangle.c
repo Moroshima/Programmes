@@ -6,6 +6,6 @@ int main(void)
     scanf("%lf,%lf,%lf",&a,&b,&c);
     if((a*a+b*b)<c*c||(a*a+c*c)<b*b)
         {
-           printf("这是一个等边三角形"); 
+           printf("这是一个等边三角形\n"); 
         }
 }
