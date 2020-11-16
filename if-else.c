@@ -5,7 +5,7 @@ int main()
     //完善一下代码
     if(score>=10000)
     {
-        printf("钻石玩\n");
+        printf("钻石玩家\n");
     }
     else if(score>=5000)
     {
