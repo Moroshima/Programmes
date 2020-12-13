@@ -2,22 +2,22 @@
 int main() 
 {
     int score = 7200;
-    //å®Œå–„ä¸€ä¸‹ä»£ç 
+    //ÍêÉÆÒ»ÏÂ´úÂë
     if(score>=10000)
     {
-        printf("é’»çŸ³çŽ©å®¶\n");
+        printf("×êÊ¯Íæ¼Ò\n");
     }
     else if(score>=5000)
     {
-        printf("ç™½é‡‘çŽ©å®¶\n");    
+        printf("°×½ðÍæ¼Ò\n");    
     }
     else if(score>=1000)
     {
-        printf("é’é“œçŽ©å®¶\n");     
+        printf("ÇàÍ­Íæ¼Ò\n");     
     }
     else if(1000>score)
     {
-        printf("æ™®é€šçŽ©å®¶\n");    
+        printf("ÆÕÍ¨Íæ¼Ò\n");    
     }
     return 0;
 }
