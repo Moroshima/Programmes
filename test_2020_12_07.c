@@ -65,3 +65,45 @@ int main()
     return 0;
 }
 */
+
+/*
+#include<stdio.h>
+int main()
+{
+    int a=10,*p=&a,**q=&p;
+    printf("%d",*q);
+}
+*/
+
+/*
+#include<stdio.h>
+int main()
+{
+    double x[10]={0},*p=x;
+    scanf("%lf",p+6);
+    for(int i=0;i<=9;i++)
+        printf("%d ",x[i]);
+}
+*/
+
+#include <stdio.h>
+#define N 5
+int fun(int *s, int a, int n)
+{    
+     int j;
+    *s=a;
+
+     j=n;
+    while(a!=s[j])
+
+           j--;
+    return j;
+}
+int main()
+{
+     int s[N+1]; int k;
+     for(k=1; k<=N; k++)
+         s[k]=k+1;
+      printf("%d\n",fun(s,4,N));
+      return 0;
+}
