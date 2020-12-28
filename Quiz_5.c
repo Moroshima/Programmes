@@ -107,4 +107,4 @@ int fun(int s[],int t[])
 
         return 0;
 
- }
+}
